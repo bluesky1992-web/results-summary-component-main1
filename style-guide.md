@@ -35,7 +35,7 @@ The designs were created to the following widths:
 
 ### Notes
 
-Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
+Use transparency to get the color variations necessary to match the design. Hint: look into using `hsla()`.
 
 ## Typography
 
