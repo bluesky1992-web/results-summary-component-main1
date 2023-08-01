@@ -3,6 +3,7 @@ body {
 }
 
 .attribution {
+  margin-top:20px;
   font-size: 11px;
   text-align: center;
 }
@@ -10,27 +11,80 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+/* Left part of the component starts here */
+
 .parent-component {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10%;
-   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
 }
 .result {
-    text-align: center;
-     width: 250px;
-     height: 350px;
-     background-image:linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+  text-align: center;
+  width: 250px;
+  height: 350px;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 22px;
+}
+.result > h3 {
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 40px;
+}
+.result > h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: -8px;
 }
 .result > p {
- width: 220px;
- padding-left: 18px;
- font-size:;
-    
+  width: 180px;
+  align-self: center;
+  font-size: 13px;
+  color: hsl(241, 100%, 89%);
+}
+.result > .circle {
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  align-self: center;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-image-slice: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle > div {
+  margin-bottom: 25px;
+}
+.circle > div > p:nth-child(2) {
+  color: hsl(241, 100%, 89%);
+}
+.big {
+  font-size: 50px;
+  margin-bottom: -20px;
+  color: hsl(0, 0%, 100%);
 }
 .summary {
-    width: 250px;
-    height: 350px;
+  width: 250px;
+  height: 350px;
+  /* text-align: center; */
+  padding: 20px;
+}
+.rating-comp {
+  margin: 20px 0px;
+  border: 1px solid ;
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+}
+
+.red {
+background-color: red;
 }
