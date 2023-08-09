@@ -33,6 +33,8 @@ body {
   justify-content: center;
   padding: 20px;
   border-radius: 22px;
+
+  z-index: 2;
 }
 .result > h3 {
   color: hsl(241, 100%, 89%);
@@ -77,16 +79,18 @@ body {
 .summary {
   width: 250px;
   height: 350px;
-  /* text-align: center; */
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin-top: -30px; */
-  background-color: hsl(0, 0%, 100%);
-  box-shadow: 25px 23px 49px -13px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 25px 23px 49px -13px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 25px 23px 49px -13px rgba(0, 0, 0, 0.8);
+  border-radius: 0px 22px 22px 0px;
+  box-shadow: 25px 57px 207px -35px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 25px 57px 207px -35px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 25px 57px 207px -35px rgba(0, 0, 0, 0.8);
+
+  margin-left: -15px;
+  z-index: 1;
+  padding-left: 40px;
 }
 
 .rating-comp {
