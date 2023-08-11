@@ -121,12 +121,16 @@ body {
 
 button {
   align-self: center;
-  padding: 10px 70px;
+  padding: 10px 90px;
   border-radius: 22px;
   border-style: none;
   background-color: hsl(224, 30%, 27%);
   color: white;
   font-family: 'Hanken Grotesk', sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 .space-left {
@@ -137,4 +141,13 @@ button {
 }
 .black-num {
   color: hsl(224, 30%, 27%);
+}
+@media (max-width: 600px) {
+  .summary {
+    margin-left: 0;
+    padding-left: 20px;
+    border-radius: 0px 0px 0px 0px;
+    margin-top: -15px;
+  }
+  
 }
